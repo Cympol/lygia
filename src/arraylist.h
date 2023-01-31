@@ -6,7 +6,7 @@
 #include <stddef.h>
 // ARRAYLIST DEFINITION: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-typedef struct { //arraylist
+typedef struct arraylist { //arraylist
 	uint8_t *data;
 	size_t   type_size;
 
@@ -31,5 +31,8 @@ bool  arraylist_set(arraylist *list, size_t index, void *value);
 
 bool  arraylist_del(arraylist *list, size_t index);
 bool  arraylist_add(arraylist *list, size_t index, void *value);
+
+bool  arraylist_shift(arraylist *list);
+bool  arraylist_unshift(arraylist *list, void *value);
 
 #endif //__ARRAYLIST_H__

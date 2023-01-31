@@ -135,3 +135,10 @@ bool arraylist_del(arraylist *list, size_t index) {
 	}
 	return false;
 }
+
+bool arraylist_shift(arraylist *list){
+	return arraylist_del(list, 0) ? true : false;
+}
+bool arraylist_unshift(arraylist *list, void *value){
+	return arraylist_add(list, 0, value) ? true : false;
+}

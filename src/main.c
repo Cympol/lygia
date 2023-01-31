@@ -20,8 +20,8 @@ typedef enum { // TokenType: lygia lexemes;
     NOT_EQUALS_TOKEN,
     GREATER_THAN_TOKEN,
     LESSER_THAN_TOKEN,
-    GREATER_OR_EQUALS_TOKEN,
-    LESSER_OR_EQUALS_TOKEN,
+    GREATER_EQUALS_TOKEN,
+    LESSER_EQUALS_TOKEN,
     // Logical: and or not;
     AND_TOKEN,
     OR_TOKEN,
@@ -71,9 +71,9 @@ int main(int argc, char *argv[]) {
         int ch = fgetc(file);
         printf("%c", ch);
         
-        switch (ch) {
+        // switch (ch) {
 
-        }
+        // }
     }
     // 3. Report ortography errors;
     // 4. Print the tokens in the terminal;
